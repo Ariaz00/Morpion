@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Morpion</title>
+</head>
+
+<body>
+    <h1>Le morpion</h1>
+    <div id="morpionContainer">
+        <div id="board"></div>
+        <div id="message"></div>
+    </div>
+    <div id="buttonContainer">
+        <button id="replayButton" onclick="resetGame()">Joueur VS Joueur</button>
+        <button id="cpuButton" onclick="cpuGame()">VS Ordinateur</button>
+        <button id="puissance4Button" onclick="showPuissance4()">Puissance 4</button>
+    </div>
+    <div id="puissance4Container" style="display: none;">
+        <div id="puissance4Board"></div>
+        <div id="messageP4"></div>
+        <div id="puissance4ButtonContainer">
+            <button id="puissance4ReplayButton" onclick="resetPuissance4()">Rejouer</button>
+            <button id="returnToMorpionButton" onclick="showMorpion()">Morpion</button>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
